@@ -1,0 +1,99 @@
+IPv6: ? 2a02:8429:83ae:c501:7c83:e087:45d3:c521
+
+IPv4: ? 37.66.232.2365
+Et Mac
+
+   
+Your IPv4	37.66.232.236
+Your IPv6	
+2a02:8429:83ae:c501:5584:be3a:1335:5465
+Country	France
+
+IP ADDRESSES
+
+# Écoute sur toutes les interfaces IPv4 et IPv6
+bind=0.0.0.0:9333
+bind=[::]:9333
+
+
+# =======================IP MacMini=====================
+addneud=37.66.232.236    		# IP MacPro public de pe net wifi MacMini
+addneud=255.255.255.0     		# IP MacPro local de pe terminal wifi MacMini
+addneud=192.168.1.54     		# IP MacPro local de pe terminal wifi MacMini
+addneud=2a02:8429:83ae:c501:c13:663f:9310:8a1b    	# IP vinandroid  de pe terminal wifi winmac
+addneud=2a02:8429:83ae:c501:5533:a26a:e764:6d84		# IP de pe net défaut MacMini
+
+
+# =======================IP winmac=====================
+addneud=37.66.232.236    		# IP MacPro public de pe net wifi 
+addneud=255.255.255.0     		# IP MacPro local de pe terminal wifi winmac
+addneud=10.0.2.2     			# IP MacPro local de pe terminal wifi winmac
+addneud=10.0.2.15    			# IP vinandroid  de pe terminal wifi winmac
+addneud=fe80::6a03:25f1:195:a8eb%13			# IP de pe teminalpar défaut winmac
+
+
+
+# =======================IP winandroid=====================
+addneud= 192.168.1.1    		# IP MacPro public de pe net wifi 
+addneud=255.255.255.0     		# IP MacPro local de pe terminal wifi 
+addneud=192.168.1.37     		# IP MacPro local de pe terminal wifi 
+addneud=37.66.232.236    		# IP vinandroid  de pe net wifi 
+addneud=fe80::ce2d:1bff:fe85:b528%18			# IP Passerelle de pe teminalpar défaut
+addneud=2a02:8429:83ae:c501:5f2b:1650:650a:df6c    	# IP Passerelle local de pe terminal wifi 
+addneud=2a02:8429:83ae:c501:ec23:cac0:e24b:8d64    	# IP vinandroid  de pe net wifi 
+
+
+# =======================IP ubuntu24=============================
+addneud=192.168.1.20			# IP ubuntu24  de pe setari
+addneud=fe80::a00:27ff:fe49:8e62	# IP ubuntu24  de pe setari
+addneud=37.66.232.236  			# IP ubuntu24  de pe net
+addneud=2a02:8429:83ae:c501:3d98:6311:64f5:2fc5  	# IP ubuntu24  de pe net
+
+
+# =======================IP MacPro==================================
+addneud=193.186.4.119     		# IP MacPro public de pe net wifi  
+addneud=37.66.232.236			# IP MacPro public de pe net wifi  
+addneud=127.0.0.1     			# IP MacPro local de pe terminal wifi  
+addneud=192.168.1.24     		# IP MacPro local de pe terminal wifi  
+addneud=192.168.1.1    			# IP MacPro local de pe terminal wifi  
+addneud=192.168.1.255     		# IP MacPro local de pe terminal wifi  
+addneud=fe80::1042:f93:41a8:cbdc%en0    # IP MacPro local tunel terminal wifi  
+addneud=2a02-8429-83ae-c501-745c-cbdf-da2a-0797    	# IP MacPro  de pe net wifi  
+addneud=2a02:8429:83ae:c501:39a0:1311:8d35:84c4    	# IP MacPro  gastia pe bitcoin Macmini
+addneud=2a02:8429:83ae:c501:1490:443b:1e21:532b    	# IP MacPro  gastia terminal MacPro wifi
+
+
+
+# ==================== explications ===================
+Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6 de liaison locale. . . . .: fe80::6a03:25f1:195:a8eb%13
+   Adresse IPv4. . . . . . . . . . . . . .: 10.0.2.15
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . : 10.0.2.2
+
+
+
+Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6. . . . . . . . . . . . . .: 2a02:8429:83ae:c501:5f2b:1650:650a:df6c
+   Adresse IPv6 temporaire . . . . . . . .: 2a02:8429:83ae:c501:ec23:cac0:e24b:8d64
+   Adresse IPv6 de liaison locale. . . . .: fe80::ce70:1b95:5656:e279%18
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.1.37
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . : fe80::ce2d:1bff:fe85:b528%18
+   retour par défaut. . . . . .           : 192.168.1.1
+
+Adresses IP publiques (IPv4 et IPv6):
+	◦	193.186.4.119 et 37.66.232.236: Ce sont des adresses IPv4 publiques. Elles sont attribuées par votre fournisseur d'accès à Internet (SFR dans votre cas) et permettent à votre Mac Pro d'être accessible depuis Internet.
+	◦	2a02-8429-83ae-c501-745c-cbdf-da2a-0797: C'est une adresse IPv6 publique. Elle sert au même but que les adresses IPv4, mais utilise un format différent. Les adresses IPv6 offrent un espace d'adressage bien plus vaste que les IPv4.
+	•	Adresses IP locales (IPv4):
+	◦	127.0.0.1: C'est l'adresse IP de boucle locale. Elle sert à désigner votre propre machine depuis votre machine.
+	◦	192.168.1.24, 192.168.1.1 et 192.168.1.255: Ce sont des adresses IP privées, utilisées au sein de votre réseau local (par exemple, chez vous).
+	▪	192.168.1.24 est probablement l'adresse attribuée à votre Mac Pro sur votre réseau local.
+	▪	192.168.1.1 est généralement l'adresse IP de votre routeur (box internet).
+	▪	192.166.1.255 est l'adresse de broadcast, utilisée pour envoyer des paquets à tous les appareils du réseau.
+Pourquoi plusieurs adresses IP ?
+	•	Plusieurs connexions simultanées: Vous pouvez être connecté à plusieurs réseaux en même temps (Wi-Fi, Ethernet, VPN). Chaque connexion aura une adresse IP différente.
+	•	Adresses dynamiques: Les adresses IP publiques peuvent changer à chaque connexion, surtout si vous utilisez une connexion dynamique (DHCP).
+	•	Adresses réservées: Certaines adresses ont des significations spécifiques :
+	◦	127.0.0.1: Toujours réservée à l'hôte local.
+	◦	Les adresses commençant par 192.168.x.x sont généralement utilisées pour les réseaux locaux.

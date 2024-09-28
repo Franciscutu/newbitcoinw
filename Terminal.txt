@@ -1,0 +1,107 @@
+comezi terminal
+python
+tasklist /FI "IMAGENAME eq pythonw.exe"
+
+taskkill /F /PID 13356
+
+
+
+
+
+
+
+git clone https://github.com/bitcoin/bitcoin.git
+
+/Users/francisc/Desktop/newbitcoin/build/src/qt/bitcoin-qt -datadir="/Users/Shared/Library/Application Support/Bitcoin
+
+papa@papa:~/Bureau$ date +%s
+1723794422
+
+find . -type f -exec sed -i. 's/1296688602/1723794422/g' {} +
+
+make clean
+./autogen.sh
+./configure
+make
+
+cmake --build build
+
+=======remplase genesis et root en cosensus====== 
+find . -type f -exec sed -i. 's/36e9cbd7a9fcca717dcf0fb2de1fd2debf3b3a9f629271405593d168d6757111/dadd5cd7deb847e8d992a07d28f226052822035cf2d353480e1697ff9fb36a22/g' {} +
+
+find . -type f -exec sed -i. 's/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b/6c04a0669861b39ba15f6d674a43aba47802cbebfc33037f4199641289fc9de8/g' {} +
+grep -r '"Incorrect or no genesis block found. Wrong datadir for network?"' .
+
+=============================genesisblock=======================
+
+-----BEGIN EC PRIVATE main KEY-----
+python3 clepublicprive.py
+Clé privée (hex): 862184a5876fde17136fdbf6fa95056b34cae412157231a806949627eebea564
+Clé publique (hex):ParseHex: 6a8454e51707e750aafe8fa97b40658a7dc181146f56a08a0c7ed232fa8239bdaabc3ce9be843de8fc7524fd7a9680cd659b51acc99d1d8e8a778474d16bcfba
+La signature est valide.
+-----END PUBLIC KEY-----
+
+=============== DONE===================================================
+j'ai change le pszTimestemp et j'ai trouve le bon hash genesis et merkle
+la je change le genesis nTime = 1723794422
+je doit trouver les bons hashes pour nTime
+je doit changer nTime, Clé publique (hex):ParseHex: 6a8454e51707e750aaf....
+
+
+============ A faire ==============
+fps aux | grep bitcoind
+ps aux | grep bitcoind
+kill -9 2961
+./bitcoin-qt -debug
+sudo lsof -i :8332     vezi daca portul e folosit 
+bitcoind -rpcport=833x   schimba portul
+----------------
+./bitcoin-cli generatetoaddress 5 bc1quw78k5u6k4ycunfsmv5u5uh2kc0pnv9r7f0x5q
+./bitcoin-cli getmininginfo
+
+bitcoin-cli getnetworkinfo
+bitcoin-cli getblockchaininfo
+bitcoin-cli getbalance
+bitcoin-cli getaddressesbylabel ""
+bitcoin-cli getblock <blockhash>
+bitcoin-cli getbestblockhash
+bitcoin-cli sendtoaddress <address> <amount>
+bitcoin-cli getnewaddress     !!!!
+bitcoin-cli listtransactions
+bitcoin-cli getpeerinfo
+bitcoin-cli estimaterawfee 6
+bitcoin-cli listunspent
+bitcoin-cli ping
+bitcoin-cli getmempoolinfo
+bitcoin-cli -rpcuser=monutilisateur -rpcpassword=monmotdepasse getblockchaininfo
+bitcoin-cli -rpcuser=votre_nom_utilisateur -rpcpassword=votre_mot_de_passe getblockcount
+bitcoin-cli generatetoaddress 1 "votre_adresse_Bitcoin"
+bitcoin-cli getblockhash <height>
+bitcoin-cli stop
+bitcoin-cli getdeploymentinfo
+bitcoin-cli getrawmempool
+bitcoind -daemon -debug  redemarage de neud
+
+
+
+
+============ A TESTER ===============
+
+lesse  1 seed avec l'adresse genessis
+je doit esseyer de desactiver int dans init.cpp
+uiInterface.InitMessage(_("Loading P2P addresses…"));
+// Code pour charger les adresses
+uiInterface.InitMessage(_("Loading banlist…"));
+// Code pour charger la liste des bans
+
+==========================botcoin.conf========
+/src$ nano autogenerate.sh
+	#!/bin/bash
+	./bitcoin-cli generatetoaddress 10000 bc1qqdptvq4gqknqwmla5fv34rj7ke3cx5zhys7l9n
+/src$ chmod +x autogenerate.sh
+/src$./autogenerate.sh
+
+
+--------------------
+./bitcoin-qt -connect=0 -listen=0 -dnsseed=0 -nodnsseed
+
